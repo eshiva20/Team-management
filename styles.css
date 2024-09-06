@@ -1,0 +1,107 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 5px 10px;
+  background-color: #edf5ef;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  .title {
+    font-weight: 600;
+    font-size: 36px;
+    color: #20313a;
+  }
+  .create_btn {
+    background: #016d24;
+    color: #fff;
+    box-shadow: 1px 1px 3px 0px #002c0ee5;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .single_option:nth-child(1) {
+      background: #016d24;
+      box-shadow: -1px 1px 3px 0px #002c0ee5 inset,
+        1px -1px 2px 0px #02ae3ae5 inset, -1px -1px 2px 0px #002c0e33 inset,
+        1px 1px 2px 0px #002c0e33 inset, 1px -1px 2px 0px #002c0e80,
+        -1px 1px 2px 0px #02ae3a4d;
+      span {
+        color: #fff;
+      }
+      span:nth-child(1) {
+        border-right: 1px solid #fff;
+        padding-right: 7px;
+      }
+    }
+    .single_option {
+      background: linear-gradient(135deg, #f9fffb 0%, #e1e8e3 100%);
+      box-shadow: 1px 1px 3px 0px #c9cfcbe5, -1px -1px 2px 0px #ffffffe5,
+        1px -1px 2px 0px #c9cfcb33, -1px 1px 2px 0px #c9cfcb33,
+        -1px -1px 2px 0px #c9cfcb80 inset, 1px 1px 2px 0px #ffffff4d inset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      min-width: 60px;
+      span {
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    background: linear-gradient(135deg, #f9fffb 0%, #e1e8e3 100%);
+    box-shadow: 1px 1px 3px 0px #c9cfcbe5, -1px -1px 2px 0px #ffffffe5,
+      1px -1px 2px 0px #c9cfcb33, -1px 1px 2px 0px #c9cfcb33,
+      -1px -1px 2px 0px #c9cfcb80 inset, 1px 1px 2px 0px #ffffff4d inset;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid #20313a33;
+    .date {
+      color: #20313a;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .calendar_icon {
+      color: #20313a;
+      cursor: pointer;
+    }
+  }
+}
