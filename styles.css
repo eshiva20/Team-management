@@ -10,98 +10,255 @@ h6 {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
   margin: 0;
-  padding: 5px 10px;
   background-color: #edf5ef;
-}
-
-.header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-family: "Rubik", sans-serif;
-  .title {
-    font-weight: 600;
-    font-size: 36px;
-    color: #20313a;
-  }
-  .create_btn {
-    background: #016d24;
-    color: #fff;
-    box-shadow: 1px 1px 3px 0px #002c0ee5;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    padding: 10px 25px;
-    font-size: 16px;
-    cursor: pointer;
-  }
 }
 
-.filters {
+.sidebar {
+  width: 10%;
+  background: #171b21;
+  color: #009b1c;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 15px;
-  .left {
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .task_icon {
+      padding-top: 20px;
+      width: 40px;
+    }
+    .task_master {
+      padding-top: 10px;
+      color: #fff;
+    }
+    .add_icon {
+      box-shadow: 2px -2px 5px 0px #003e0be5 inset,
+        -2px 2px 4px 0px #00f82de5 inset, 2px 2px 4px 0px #003e0b33 inset,
+        -2px -2px 4px 0px #003e0b33 inset, -1px 1px 2px 0px #003e0b80,
+        1px -1px 2px 0px #00f82d4d;
+      outline: none;
+      border: none;
+      background: #009b1c;
+      font-size: 32px;
+      padding: 4px 12px;
+      margin-top: 15px;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 5px;
+    }
+  }
+  .all_side_menus {
+    width: 100%;
+    margin-top: 40px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    .single_option:nth-child(1) {
-      background: #016d24;
-      box-shadow: -1px 1px 3px 0px #002c0ee5 inset,
-        1px -1px 2px 0px #02ae3ae5 inset, -1px -1px 2px 0px #002c0e33 inset,
-        1px 1px 2px 0px #002c0e33 inset, 1px -1px 2px 0px #002c0e80,
-        -1px 1px 2px 0px #02ae3a4d;
-      span {
-        color: #fff;
-      }
-      span:nth-child(1) {
-        border-right: 1px solid #fff;
-        padding-right: 7px;
-      }
+    gap: 5px;
+    flex-direction: column;
+    .single_side_menu:nth-child(2) {
+      background: #009b1c;
+      color: #fff;
     }
-    .single_option {
-      background: linear-gradient(135deg, #f9fffb 0%, #e1e8e3 100%);
-      box-shadow: 1px 1px 3px 0px #c9cfcbe5, -1px -1px 2px 0px #ffffffe5,
-        1px -1px 2px 0px #c9cfcb33, -1px 1px 2px 0px #c9cfcb33,
-        -1px -1px 2px 0px #c9cfcb80 inset, 1px 1px 2px 0px #ffffff4d inset;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      padding: 5px 10px;
-      border-radius: 5px;
+    .single_side_menu {
       cursor: pointer;
-      min-width: 60px;
-      span {
-        color: #000;
-        font-size: 16px;
+      box-shadow: -1px 1px 3px 0px #090b0de5, -1px -1px 2px 0px #090b0d33,
+        1px -1px 2px 0px #090b0d inset, -1px 1px 2px 0px #252b35 inset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0px;
+      width: 100%;
+      .single_side_menu_icon {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+      }
+      .single_side_menu_name {
+        margin-top: 5px;
         font-weight: 600;
       }
     }
   }
-  .right {
+}
+.main {
+  width: 90%;
+  height: 100vh;
+
+  .topbar {
+    border-bottom: 1px solid #d8d8d8;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    .search_div {
+      background: #edf5ef;
+      border-radius: 7px;
+      border: 1px solid #20313a33;
+      width: fit-content;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: #20313a;
+      box-shadow: 2px 2px 5px 0px #d1d8d2e5 inset,
+        -2px -2px 4px 0px #ffffffe5 inset, 2px -2px 4px 0px #d1d8d233 inset,
+        -2px 2px 4px 0px #d1d8d233 inset, -1px -1px 2px 0px #d1d8d280,
+        1px 1px 2px 0px #ffffff4d;
+      .input {
+        background: transparent;
+        outline: none;
+        border: none;
+        font-size: 18px;
+      }
+    }
+    .topbar_right {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      gap: 15px;
+      .bell {
+        height: 28px;
+        width: 28px;
+        border: 0.5px solid #009b1c;
+        padding: 10px 12px;
+        border-radius: 10px;
+        box-shadow: 11px 11px 28px 0px #dfe5e1e5, -11px -11px 22px 0px #fbfffde5,
+          11px -11px 22px 0px #dfe5e133, -11px 11px 22px 0px #dfe5e133,
+          -1px -1px 2px 0px #dfe5e180 inset, 1px 1px 2px 0px #fbfffd4d inset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .bell_icon {
+          font-size: 30px;
+        }
+      }
+      .user_info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 0.5px solid #009b1c;
+        padding: 5px 10px;
+        border-radius: 7px;
+        width: 180px;
+        height: 40px;
+
+        .user_logo {
+          width: 40px;
+        }
+        .texts {
+          .name {
+            color: #303030;
+            font-weight: 600;
+            font-size: 16px;
+          }
+          .role {
+            color: #000;
+            font-weight: 300;
+            font-size: 14px;
+          }
+        }
+        .down_arrow {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    margin-top: 5px;
+    .title {
+      font-weight: 600;
+      font-size: 32px;
+      color: #20313a;
+    }
+    .create_btn {
+      background: #016d24;
+      color: #fff;
+      box-shadow: 1px 1px 3px 0px #002c0ee5;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      padding: 7px 25px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .filters {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 200px;
-    background: linear-gradient(135deg, #f9fffb 0%, #e1e8e3 100%);
-    box-shadow: 1px 1px 3px 0px #c9cfcbe5, -1px -1px 2px 0px #ffffffe5,
-      1px -1px 2px 0px #c9cfcb33, -1px 1px 2px 0px #c9cfcb33,
-      -1px -1px 2px 0px #c9cfcb80 inset, 1px 1px 2px 0px #ffffff4d inset;
-    padding: 5px 15px;
-    border-radius: 10px;
-    border: 1px solid #20313a33;
-    .date {
-      color: #20313a;
-      font-size: 16px;
-      font-weight: 600;
+    margin-top: 7px;
+    padding: 0px 10px;
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .single_option:nth-child(1) {
+        background: #016d24;
+        box-shadow: -1px 1px 3px 0px #002c0ee5 inset,
+          1px -1px 2px 0px #02ae3ae5 inset, -1px -1px 2px 0px #002c0e33 inset,
+          1px 1px 2px 0px #002c0e33 inset, 1px -1px 2px 0px #002c0e80,
+          -1px 1px 2px 0px #02ae3a4d;
+        span {
+          color: #fff;
+        }
+        span:nth-child(1) {
+          border-right: 1px solid #fff;
+          padding-right: 7px;
+        }
+      }
+      .single_option {
+        background: linear-gradient(135deg, #f9fffb 0%, #e1e8e3 100%);
+        box-shadow: 1px 1px 3px 0px #c9cfcbe5, -1px -1px 2px 0px #ffffffe5,
+          1px -1px 2px 0px #c9cfcb33, -1px 1px 2px 0px #c9cfcb33,
+          -1px -1px 2px 0px #c9cfcb80 inset, 1px 1px 2px 0px #ffffff4d inset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        min-width: 60px;
+        span {
+          color: #000;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
     }
-    .calendar_icon {
-      color: #20313a;
-      cursor: pointer;
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 200px;
+      background: linear-gradient(135deg, #f9fffb 0%, #e1e8e3 100%);
+      box-shadow: 1px 1px 3px 0px #c9cfcbe5, -1px -1px 2px 0px #ffffffe5,
+        1px -1px 2px 0px #c9cfcb33, -1px 1px 2px 0px #c9cfcb33,
+        -1px -1px 2px 0px #c9cfcb80 inset, 1px 1px 2px 0px #ffffff4d inset;
+      padding: 5px 15px;
+      border-radius: 10px;
+      border: 1px solid #20313a33;
+      .date {
+        color: #20313a;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .calendar_icon {
+        color: #20313a;
+        cursor: pointer;
+      }
     }
   }
 }
