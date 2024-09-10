@@ -92,7 +92,7 @@ body {
 
   .topbar {
     border-bottom: 1px solid #d8d8d8;
-    padding: 20px;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     .search_div {
@@ -122,8 +122,7 @@ body {
       margin-left: auto;
       gap: 15px;
       .bell {
-        height: 28px;
-        width: 28px;
+        width: 20px;
         border: 0.5px solid #009b1c;
         padding: 10px 12px;
         border-radius: 10px;
@@ -135,7 +134,7 @@ body {
         justify-content: center;
 
         .bell_icon {
-          font-size: 30px;
+          font-size: 20px;
         }
       }
       .user_info {
@@ -146,25 +145,26 @@ body {
         padding: 5px 10px;
         border-radius: 7px;
         width: 180px;
-        height: 40px;
+        height: 32px;
 
         .user_logo {
-          width: 40px;
+          width: 35px;
         }
         .texts {
           .name {
             color: #303030;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 14px;
           }
           .role {
             color: #000;
             font-weight: 300;
-            font-size: 14px;
+            font-size: 12px;
           }
         }
         .down_arrow {
           margin-left: auto;
+          cursor: pointer;
         }
       }
     }
@@ -178,7 +178,7 @@ body {
     margin-top: 5px;
     .title {
       font-weight: 600;
-      font-size: 32px;
+      font-size: 28px;
       color: #20313a;
     }
     .create_btn {
