@@ -198,7 +198,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 7px;
+    margin-top: 10px;
     padding: 0px 10px;
     .left {
       display: flex;
@@ -269,7 +269,7 @@ body {
 
     .meeting_header {
       width: calc(100% - 10px);
-      margin-top: 10px;
+      margin-top: 15px;
       color: #525252;
       font-size: 14px;
       padding: 0px 8px;
@@ -354,7 +354,7 @@ body {
 
           tr td:nth-child(1) {
             width: 57%;
-            padding: 10px 0px;
+            padding: 12px 0px;
           }
           tr td:nth-child(2) {
             width: 10%;
