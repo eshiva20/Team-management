@@ -159,12 +159,6 @@ document.addEventListener("DOMContentLoaded", function () {
         agendaBtn.classList.add("view-mom");
       }
 
-      // if (dateInfo.button === "Update") {
-      //   agendaBtn.classList.add("update");
-      // } else if (dateInfo.button === "View MOM") {
-      //   agendaBtn.classList.add("view-mom");
-      // }
-
       const agendaTd = document.createElement("td");
       agendaTd.innerHTML = `<div class="meeting_agenda">
                               <span>${dateInfo.agenda}</span>
