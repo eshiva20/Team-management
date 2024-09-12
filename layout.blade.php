@@ -62,13 +62,16 @@ h6 {
 body {
   margin: 0;
   background-color: #edf5ef;
-  display: flex;
-  align-items: center;
   font-family: "Rubik", sans-serif;
 }
 
+.main_body{
+  display: flex;
+  align-items: center;
+}
+
 .sidebar {
-  width: 9%;
+  width: 8%;
   background: #171b21;
   color: #009b1c;
   height: 100vh;
@@ -138,7 +141,7 @@ body {
 }
 
 .main {
-  width: 91%;
+  width: 92%;
   height: 100vh;
 
   .topbar {
@@ -232,6 +235,7 @@ body {
     <!-- @ include ('admin::shiva.nav-top') -->
     <!-- @include ('admin::shiva.nav-left') -->
 
+    <div class="main_body">
     <section class="sidebar">
       <div class="top">
         <img src="./assets/task_icon.png" alt="Task_icon" class="task_icon" />
@@ -264,6 +268,9 @@ body {
       </div>
         @yield('content-wrapper')
     </div>
+    </div>
+
+    
 
     <script>
     const sidebarIcons = [
