@@ -47,43 +47,52 @@
           </div>
         </div>
       </div>
-      <div class="header">
-        <h2 class="title">Meetings</h2>
-        <button class="create_btn">Create Meeting</button>
-      </div>
-      <div class="filters">
-        <div class="left">
-          <div class="single_option">
-            <span>All</span>
-            <span>53</span>
+
+      <div class="dashboard">
+        <div class="header">
+          <h2 class="title">Meetings</h2>
+          <button class="create_btn">Create Meeting</button>
+        </div>
+        <div class="filters">
+          <div class="left">
+            <div class="single_option">
+              <span>All</span>
+              <span>53</span>
+            </div>
+            <div class="single_option">
+              <span>My Meeting</span>
+            </div>
+            <div class="single_option">
+              <span>Meeting Count</span>
+            </div>
           </div>
-          <div class="single_option">
-            <span>My Meeting</span>
-          </div>
-          <div class="single_option">
-            <span>Meeting Count</span>
+          <div class="right">
+            <span class="date">Aug, 2024</span>
+            <i class="fa-solid fa-calendar calendar_icon"></i>
           </div>
         </div>
-        <div class="right">
-          <span class="date">Aug, 2024</span>
-          <i class="fa-solid fa-calendar calendar_icon"></i>
-        </div>
+
+        <!-- Section to display dynamic agenda list -->
+        <section class="agenda_lists">
+          <div id="agenda-list"></div>
+        </section>
+
+        <section class="table_body">
+          <table class="meeting_header">
+            <tr>
+              <th>Date</th>
+              <th>Days</th>
+              <th>Time</th>
+              <th>Meeting Agenda</th>
+              <th>Department</th>
+              <th>Meeting Type</th>
+              <th>Meeting ID</th>
+              <th>Leader</th>
+            </tr>
+          </table>
+          <div class="container"></div>
+        </section>
       </div>
-      <section class="table_body">
-        <table class="meeting_header">
-          <tr>
-            <th>Date</th>
-            <th>Days</th>
-            <th>Time</th>
-            <th>Meeting Agenda</th>
-            <th>Department</th>
-            <th>Meeting Type</th>
-            <th>Meeting ID</th>
-            <th>Leader</th>
-          </tr>
-        </table>
-        <div class="container"></div>
-      </section>
     </section>
 
     <script src="script.js"></script>
